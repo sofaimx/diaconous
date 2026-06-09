@@ -9,6 +9,7 @@ import Comparativa from './components/Comparativa';
 import TiposDiaconado from './components/TiposDiaconado';
 import PuntosClave from './components/PuntosClave';
 import Footer from './components/Footer';
+import HorizonteInstitucional from './components/HorizonteInstitucional';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Hero />
       <Features />
       <Identidad />
+      <HorizonteInstitucional />
       <Teologia />
       <Funciones />
       <Comparativa />

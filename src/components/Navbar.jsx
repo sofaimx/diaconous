@@ -5,7 +5,7 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white text-emerald-900 sticky top-0 z-50 shadow-md border-b border-gray-200">
+    <nav className="bg-[#F4F6F4] text-emerald-900 sticky top-0 z-50 shadow-md border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
           <div className="flex-shrink-0 flex items-center h-full py-2">
