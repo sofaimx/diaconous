@@ -1,30 +1,31 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/hero';
-import Features from './components/Features';
-import Identidad from './components/Identity';
-import Teologia from './components/Teologia';
-import Funciones from './components/Funciones';
-import Comparativa from './components/Comparativa';
-import TiposDiaconado from './components/TiposDiaconado';
-import PuntosClave from './components/PuntosClave';
-import Footer from './components/Footer';
-import HorizonteInstitucional from './components/HorizonteInstitucional';
+import React, { useState } from 'react';
+import Navbar from './components/Navbar'; 
+import Footer from './components/Footer'; 
+import HomePage from './HomePage';
+import DimensionPage from './DimensionPage';
 
 export default function App() {
+
+  const [currentPage, setCurrentPage] = useState('home');
+
+  const navigateToPage = (pageName) => {
+    setCurrentPage(pageName);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <div className="min-h-screen bg-[#f7f9f7] text-slate-800 font-sans antialiased selection:bg-[#d4af37] selection:text-white">
-      <Navbar />
-      <Hero />
-      <Features />
-      <Identidad />
-      <HorizonteInstitucional />
-      <Teologia />
-      <Funciones />
-      <Comparativa />
-      <TiposDiaconado />
-      <PuntosClave />
-      <Footer />
+    <div className="selection:bg-[#d4af37] selection:text-white">
+      {currentPage === 'home' && (
+        <div className="min-h-screen bg-[#f7f9f7] text-slate-800 font-sans antialiased">
+          <Navbar navigateToPage={navigateToPage} isHomePage={true} />
+          <HomePage navigateToPage={navigateToPage} />
+          <Footer />
+        </div>
+      )}
+
+      {currentPage === 'dimension' && (
+        <DimensionPage navigateToPage={navigateToPage} />
+      )}
     </div>
   );
 }

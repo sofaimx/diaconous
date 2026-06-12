@@ -14,7 +14,6 @@ export default function HorizonteInstitucional() {
                 </div>
 
                 <ScrollReveal className="grid md:grid-cols-3 gap-8">
-                    {/* Misión */}
                     <div className="bg-white p-8 rounded-2xl shadow-md border border-slate-100 flex flex-col justify-between transform hover:-translate-y-1 transition-all duration-300">
                         <div>
                             <div className="w-12 h-12 bg-emerald-50 text-emerald-800 rounded-xl flex items-center justify-center mb-6 shadow-inner">
@@ -22,12 +21,11 @@ export default function HorizonteInstitucional() {
                             </div>
                             <h3 className="font-serif font-bold text-xl text-emerald-950 mb-3">Nuestra Misión</h3>
                             <p className="text-sm text-slate-600 leading-relaxed text-justify">
-                                Promover, acompañar y coordinar la restauración y consolidación del Diaconado Permanente en las Diócesis de México, brindando criterios teológicos, orientaciones formativas y espacios de comunión para que los diáconos ejerzan fielmente su triple servicio a la Palabra, la Liturgia y la Caridad.
+                                Acompañar desde los primeros inicios de su vocación a los que han sentido el llamado a la vida diaconal, a formar y promover el diaconado permanente en México, asegurando que viva su identidad propia en comunión con los obispos y al servicio del Pueblo de Dios.
                             </p>
                         </div>
                     </div>
 
-                    {/* Visión */}
                     <div className="bg-white p-8 rounded-2xl shadow-md border border-slate-100 flex flex-col justify-between transform hover:-translate-y-1 transition-all duration-300">
                         <div>
                             <div className="w-12 h-12 bg-emerald-50 text-emerald-800 rounded-xl flex items-center justify-center mb-6 shadow-inner">
@@ -35,36 +33,20 @@ export default function HorizonteInstitucional() {
                             </div>
                             <h3 className="font-serif font-bold text-xl text-emerald-950 mb-3">Nuestra Visión</h3>
                             <p className="text-sm text-slate-600 leading-relaxed text-justify">
-                                Ser un referente nacional de animación pastoral consolidado, donde todas las diócesis del país integren de forma activa y fecunda el ministerio diaconal dentro de su plan diocesano, manifestando de manera viva a Cristo Servidor en medio del mundo moderno.
+                                Que cada diócesis cuente con diáconos bien formados, cercanos a las comunidades y comprometidos con la caridad y la evangelización.
                             </p>
                         </div>
                     </div>
 
-                    {/* Valores */}
                     <div className="bg-white p-8 rounded-2xl shadow-md border border-[#e6c662]/30 bg-gradient-to-b from-white to-amber-50/10 flex flex-col justify-between transform hover:-translate-y-1 transition-all duration-300">
                         <div>
                             <div className="w-12 h-12 bg-amber-50 text-[#c19a28] rounded-xl flex items-center justify-center mb-6 shadow-inner">
                                 <ShieldCheck className="w-6 h-6" />
                             </div>
-                            <h3 className="font-serif font-bold text-xl text-emerald-950 mb-3">Valores Pastorales</h3>
-                            <ul className="text-sm text-slate-600 space-y-3">
-                                <li className="flex items-start">
-                                    <span className="w-1.5 h-1.5 bg-[#c19a28] rounded-full mr-2.5 mt-2 flex-shrink-0"></span>
-                                    <span><strong>Diaconía:</strong> Servicio desinteresado por amor.</span>
-                                </li>
-                                <li className="flex items-start">
-                                    <span className="w-1.5 h-1.5 bg-[#c19a28] rounded-full mr-2.5 mt-2 flex-shrink-0"></span>
-                                    <span><strong>Fraternidad:</strong> Comunión sincera con el presbiterio.</span>
-                                </li>
-                                <li className="flex items-start">
-                                    <span className="w-1.5 h-1.5 bg-[#c19a28] rounded-full mr-2.5 mt-2 flex-shrink-0"></span>
-                                    <span><strong>Fidelidad Magisterial:</strong> Apego estricto a la doctrina.</span>
-                                </li>
-                                <li className="flex items-start">
-                                    <span className="w-1.5 h-1.5 bg-[#c19a28] rounded-full mr-2.5 mt-2 flex-shrink-0"></span>
-                                    <span><strong>Corresponsabilidad:</strong> Compromiso conjunto con el laicado.</span>
-                                </li>
-                            </ul>
+                            <h3 className="font-serif font-bold text-xl text-emerald-950 mb-3">Valores</h3>
+                            <p className="text-sm text-slate-600 leading-relaxed text-justify">
+                                Fomentar la unidad entre los diáconos del país, impulsar la humildad y cercanía como estilo de servicio, y sostener la formación integral para garantizar un ministerio sólido.
+                            </p>
                         </div>
                     </div>
                 </ScrollReveal>

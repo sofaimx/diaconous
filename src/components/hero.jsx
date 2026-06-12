@@ -1,6 +1,7 @@
 import React from 'react';
 
-export default function Hero() {
+// Recibe la función navigateToPage como prop
+export default function Hero({ navigateToPage }) {
   return (
     <header className="relative bg-emerald-900 text-white overflow-hidden min-h-[580px] flex items-center">
       <div className="absolute inset-0 z-0 bg-emerald-900">
@@ -19,9 +20,17 @@ export default function Hero() {
         <p className="text-lg sm:text-xl text-emerald-50 max-w-3xl mx-auto font-light leading-relaxed drop-shadow">
           Acompañando, formando y promoviendo la restauración del ministerio diaconal en las comunidades eclesiales de México.
         </p>
+        
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <a href="#quienes-somos" className="px-7 py-3.5 bg-gradient-to-b from-[#e6c662] to-[#c19a28] text-emerald-950 font-serif font-bold rounded-xl hover:from-[#f3d97f] hover:to-[#d4af37] transition-all shadow-lg transform hover:-translate-y-1">Conocer Identidad</a>
           <a href="#funciones" className="px-7 py-3.5 bg-white/10 text-white font-semibold rounded-xl hover:bg-white/20 border border-white/30 backdrop-blur-md transition-all">Ver Funciones</a>
+          
+          <a 
+            onClick={() => navigateToPage('dimension')}
+             className="px-7 py-3.5 bg-gradient-to-b from-[#e6c662] to-[#c19a28] text-emerald-950 font-serif font-bold rounded-xl hover:from-[#f3d97f] hover:to-[#d4af37] transition-all shadow-lg transform hover:-translate-y-1"
+          >
+            Dimensión Nacional
+          </a>
         </div>
       </div>
     </header>

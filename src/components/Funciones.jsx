@@ -26,9 +26,9 @@ export default function Funciones() {
           </div>
           <div className="p-6">
             <ul className="space-y-3.5 text-sm text-slate-600">
-              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Proclamar solemnemente el Santo Evangelio a los fieles.</li>
-              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Ejercer el deber de la predicación y la homilía eclesial.</li>
-              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Instruir y exhortar al pueblo con la sagrada doctrina.</li>
+              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Proclamar el Evangelio en la Misa.</li>
+              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> predecir la homilia (con autorización del presbitero)</li>
+              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Enseñar catequesis y acompañar comunidades.</li>
             </ul>
           </div>
         </div>
@@ -46,14 +46,14 @@ export default function Funciones() {
           </div>
           <div className="p-6 bg-emerald-50/30">
             <ul className="space-y-3 text-sm text-slate-600">
-              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Administrar solemnemente el bautismo.</li>
-              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Reservar y distribuir la Eucaristía.</li>
-              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Asistir y bendecir los matrimonios en nombre de la Iglesia.</li>
+              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Administración solemne del bautismo.</li>
+              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Conservar y distribuir la Eucaristía y llevar el víático a los enfermos.</li>
+              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Asistir en nombre de la iglesia y bendecir los matrimonios.</li>
               <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Llevar el Viático a los moribundos.</li>
               <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Leer la Sagrada Escritura a los fieles.</li>
               <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Presidir el culto y la oración de los fieles.</li>
               <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Administrar los sacramentales.</li>
-              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Presidir el rito de los funerales y de la sepultura.</li>
+              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Presidir los ritos de los funerales y sepelios.</li>
             </ul>
           </div>
         </div>
@@ -71,9 +71,9 @@ export default function Funciones() {
           </div>
           <div className="p-6">
             <ul className="space-y-3.5 text-sm text-slate-600 mb-6">
-              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Consagrarse a los ministerios de la caridad y de la administración.</li>
-              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Guiar e impulsar las comunidades hacia la atención de los vulnerables.</li>
-              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Ser un vínculo vivo y servidor en las obras sociales eclesiales.</li>
+              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Promover obras sociales y acompañar a los pobres.</li>
+              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Visitar enfermos y marginados.</li>
+              <li className="flex items-start"><CheckCircle className="w-4 h-4 text-emerald-700 mr-2.5 mt-0.5 flex-shrink-0" /> Animar la accion caritativa en la comunidad.</li>
             </ul>
             <div className="bg-emerald-900 p-4 rounded-xl text-xs text-emerald-50 italic relative shadow-md">
               <p className="relative z-10 leading-relaxed pl-2 border-l-2 border-[#c19a28]">“Dedicados a las obras de caridad y de administración, recuerden los Diáconos el aviso de San Policarpo: Misericordiosos, diligentes, procedan en su conducta conforme a la verdad del Señor, que se hizo servidor de todos.”</p>

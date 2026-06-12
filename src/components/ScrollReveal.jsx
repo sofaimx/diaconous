@@ -13,7 +13,7 @@ export default function ScrollReveal({ children, className = "" }) {
           setIsVisible(false);
         }
       });
-    }, { threshold: 0.05 }); // Bajamos el umbral para que responda más rápido sin trabarse
+    }, { threshold: 0.05 }); 
     
     const { current } = domRef;
     if (current) observer.observe(current);
