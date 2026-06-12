@@ -14,7 +14,7 @@ export default function DimensionPage({ navigateToPage }) {
           <div className="lg:col-span-6 space-y-10 text-left">
             
             <div className="border-b border-gray-200 pb-8">
-              <span className="text-[#c19a28] font-bold text-xs uppercase tracking-widest block mb-2">Conferencia del Episcopado Mexicano</span>
+              <span className="text-[#c19a28] font-bold text-xs uppercase tracking-widest block mb-2">Mensaje Pastoral</span>
               <h1 className="text-4xl sm:text-5xl font-serif font-bold text-emerald-950 leading-tight">Dimensión Nacional del Diaconado Permanente</h1>
               <div className="h-1 w-24 bg-[#c19a28] mt-4 rounded-full"></div>
             </div>
