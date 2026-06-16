@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar'; 
 import Footer from './components/Footer'; 
 import HomePage from './HomePage';
@@ -8,8 +8,22 @@ export default function App() {
 
   const [currentPage, setCurrentPage] = useState('home');
 
+  useEffect(() => {
+    window.history.replaceState({ page: 'home' }, '');
+
+    const handlePopState = (event) => {
+      if (event.state && event.state.page) {
+        setCurrentPage(event.state.page);
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
   const navigateToPage = (pageName) => {
     setCurrentPage(pageName);
+    window.history.pushState({ page: pageName }, '');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 

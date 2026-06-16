@@ -1,6 +1,6 @@
 import React from 'react';
+import { ArrowRight, BookOpen, Shield } from 'lucide-react';
 
-// Recibe la función navigateToPage como prop
 export default function Hero({ navigateToPage }) {
   return (
     <header className="relative bg-emerald-900 text-white overflow-hidden min-h-[580px] flex items-center">
@@ -22,14 +22,23 @@ export default function Hero({ navigateToPage }) {
         </p>
         
         <div className="mt-10 flex flex-wrap justify-center gap-4">
-          <a href="#quienes-somos" className="px-7 py-3.5 bg-gradient-to-b from-[#e6c662] to-[#c19a28] text-emerald-950 font-serif font-bold rounded-xl hover:from-[#f3d97f] hover:to-[#d4af37] transition-all shadow-lg transform hover:-translate-y-1">Conocer Identidad</a>
+          <a 
+            onClick={() => navigateToPage('dimension')}
+            className="group relative px-8 py-4 bg-gradient-to-r from-[#c19a28] via-[#f3d97f] to-[#c19a28] bg-[length:200%_auto] hover:bg-right text-emerald-950 font-serif font-bold rounded-xl shadow-[0_0_20px_rgba(193,154,40,0.3)] hover:shadow-[0_0_30px_rgba(193,154,40,0.6)] transform hover:-translate-y-1 transition-all duration-500 cursor-pointer flex items-center justify-center w-full sm:w-auto overflow-hidden"
+          >
+            <BookOpen className="w-5 h-5 mr-2" />
+            Conocer Identidad
+          </a>
+          
           <a href="#funciones" className="px-7 py-3.5 bg-white/10 text-white font-semibold rounded-xl hover:bg-white/20 border border-white/30 backdrop-blur-md transition-all">Ver Funciones</a>
           
           <a 
             onClick={() => navigateToPage('dimension')}
-             className="px-7 py-3.5 bg-gradient-to-b from-[#e6c662] to-[#c19a28] text-emerald-950 font-serif font-bold rounded-xl hover:from-[#f3d97f] hover:to-[#d4af37] transition-all shadow-lg transform hover:-translate-y-1"
+            className="group relative px-8 py-4 bg-gradient-to-r from-[#c19a28] via-[#f3d97f] to-[#c19a28] bg-[length:200%_auto] hover:bg-right text-emerald-950 font-serif font-bold rounded-xl shadow-[0_0_20px_rgba(193,154,40,0.3)] hover:shadow-[0_0_30px_rgba(193,154,40,0.6)] transform hover:-translate-y-1 transition-all duration-500 cursor-pointer flex items-center justify-center w-full sm:w-auto overflow-hidden"
           >
-            Dimensión Nacional
+            <Shield className="w-5 h-5 mr-2 opacity-80" />
+            Mensaje del Obispo
+            <ArrowRight className="w-5 h-5 ml-2 transform group-hover:translate-x-1.5 transition-transform" />
           </a>
         </div>
       </div>

@@ -13,7 +13,7 @@ export default function HomePage({ navigateToPage }) {
     <>
       <Hero navigateToPage={navigateToPage} />
       <Features />
-      <Identidad />
+      <Identidad navigateToPage={navigateToPage} />
       <Teologia />
       <Funciones />
       <Comparativa />

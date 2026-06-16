@@ -9,7 +9,10 @@ export default function Navbar({ navigateToPage, isHomePage }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
           
-          <div className="flex-shrink-0 flex items-center h-full py-2">
+          <div
+            onClick={() => navigateToPage('home')}
+            className="flex-shrink-0 flex items-center h-full py-2 hover:cursor-pointer"
+          >
             <img src="/logo.png" alt="Logotipo DEDIP" className="h-full w-auto object-contain" />
           </div>
 

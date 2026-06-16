@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -9,50 +8,37 @@ export default function DimensionPage({ navigateToPage }) {
     <div className="min-h-screen bg-[#f7f9f7] text-slate-800 font-sans antialiased">
       <Navbar navigateToPage={navigateToPage} isHomePage={false} />
 
-      <main className="py-20 max-w-[96rem] mx-auto px-6 sm:px-8 lg:px-12">
-        <ScrollReveal className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-          
-          <div className="lg:col-span-5 space-y-10 text-left">
-            
-            <div className="border-b border-gray-200 pb-8">
-              <span className="text-[#c19a28] font-bold text-xs uppercase tracking-widest block mb-2">Mensaje del Obispo</span>
-              <h1 className="text-4xl sm:text-5xl font-serif font-bold text-emerald-950 leading-tight">Dimensión Nacional del Diaconado Permanente</h1>
-              <div className="h-1 w-24 bg-[#c19a28] mt-4 rounded-full"></div>
-            </div>
+      <main className="py-15 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <ScrollReveal className="flex flex-col items-center">
 
-
-            <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 space-y-8 text-left">
-  
-              <div className="relative group overflow-hidden rounded-xl shadow-inner bg-slate-50 border border-slate-200">
-                <img src="/obispo.png" alt="S.E. Mons. Guerrero Corona Jonás" className="w-full h-auto object-cover object-center group-hover:scale-105 transition-transform duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/90 to-transparent flex items-end p-6">
-                  <div className="text-white text-left">
-                    <span className="bg-amber-50 text-[#c19a28] text-[10px] font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-2 inline-block">Emérito</span>
-                    <h4 className="font-serif font-bold text-lg drop-shadow-sm">S.E. Mons. Guerrero Corona Jonás</h4>
-                    <p className="text-emerald-100 text-xs">Responsable de la D.E. de Diaconado permanente</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="text-center max-w-5xl mx-auto mb-12">
+            <span className="text-[#c19a28] font-bold text-xs uppercase tracking-widest block mb-4">Mensaje del Obispo</span>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-emerald-950 leading-tight">
+              Dimensión Episcopal para el Diaconado Permanente
+            </h1>
+            <div className="h-1.5 w-24 bg-[#c19a28] mx-auto mt-8 rounded-full"></div>
           </div>
 
-          <div className="lg:col-span-7 sticky top-28">
-            <div className="bg-white p-6 rounded-3xl shadow-2xl border border-slate-100 transform hover:scale-[1.005] transition-transform duration-500">
-              <div className="relative pb-[56.25%] h-0 rounded-2xl overflow-hidden shadow-inner bg-black border-4 border-white">
+          <div className="w-full max-w-6xl"> 
+            
+            <div className="bg-white p-3 sm:p-5 rounded-3xl shadow-2xl border border-slate-100 transform hover:-translate-y-1 transition-transform duration-500">
+              <div className="relative pb-[56.25%] h-0 rounded-2xl overflow-hidden shadow-inner bg-slate-900">
                 <iframe 
                   className="absolute top-0 left-0 w-full h-full"
                   src="https://drive.google.com/file/d/1tCpHqpmeHB0553NZURE9r6ADvhawktIE/preview" 
-                  title="Video Diaconado Permanente"
+                  title="Video Institucional DEDIP"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className="mt-5 text-center px-2">
-                <p className="font-serif font-bold text-xl text-emerald-950">Mensaje Mons. Jonas Guerrero Corona Obispo de Culiacan</p>
-                <p className="text-slate-500 text-base mt-1.5 font-light">Responsable de la Dimensión Ncional del Diaconado Permanente</p>
-              </div>
             </div>
+
+            <div className="mt-5 text-center px-2">
+              <p className="font-serif font-bold text-xl text-emerald-950">Mensaje Mons. Jonas Guerrero Corona <br/> <span className="font-serif font-semibold text-lg text-emerald-950">Obispo Emérito de Culiacan</span></p>
+              <p className="text-slate-500 text-base mt-1.5 font-light">Responsable de la Dimensión Ncional del Diaconado Permanente</p>
+            </div>
+
           </div>
 
         </ScrollReveal>
