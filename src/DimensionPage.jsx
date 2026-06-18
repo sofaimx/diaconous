@@ -36,7 +36,7 @@ export default function DimensionPage({ navigateToPage }) {
 
             <div className="mt-5 text-center px-2">
               <p className="font-serif font-bold text-xl text-emerald-950">Mensaje Mons. Jonas Guerrero Corona <br/> <span className="font-serif font-semibold text-lg text-emerald-950">Obispo Emérito de Culiacan</span></p>
-              <p className="text-slate-500 text-base mt-1.5 font-light">Responsable de la Dimensión Ncional del Diaconado Permanente</p>
+              <p className="text-slate-500 text-base mt-1.5 font-light">Responsable de la Dimensión Nacional del Diaconado Permanente</p>
             </div>
 
           </div>

@@ -20,7 +20,7 @@ export default function Identidad({ navigateToPage }) {
               
               <div className="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/20 to-transparent flex flex-col justify-end p-6 text-left">
                 <span className="bg-amber-50 text-[#c19a28] text-[9px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full mb-3 inline-block shadow-sm w-fit">
-                  Emérito
+                  Mensaje del Obispo
                 </span>
                 <h3 className="text-white font-serif font-bold text-lg drop-shadow-md">
                   S.E. Mons. Guerrero Corona Jonás
