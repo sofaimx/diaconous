@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar'; 
-import Footer from './components/Footer'; 
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import HomePage from './HomePage';
 import DimensionPage from './DimensionPage';
-<<<<<<< HEAD
 import JornadaOracion from './components/JornadaOracion';
 import FormacionPage from './components/FormacionPage';
-=======
->>>>>>> 33be2396feb2458e87c8cbf2e8d953471e5d9d4a
 
 export default function App() {
 
@@ -42,7 +39,7 @@ export default function App() {
         </div>
       )}
 
-<<<<<<< HEAD
+
       {currentPage === 'jornada' && (
         <div className="min-h-screen bg-[#f7f9f7] text-slate-800 font-sans antialiased">
           <Navbar navigateToPage={navigateToPage} isHomePage={false} />
@@ -78,11 +75,6 @@ export default function App() {
           descripcion="Documentos sobre la comunión, eclesiología y servicio en la Iglesia." 
         />
       )}
-=======
-      {currentPage === 'dimension' && (
-        <DimensionPage navigateToPage={navigateToPage} />
-      )}
->>>>>>> 33be2396feb2458e87c8cbf2e8d953471e5d9d4a
     </div>
   );
 }
