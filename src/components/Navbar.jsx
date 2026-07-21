@@ -28,10 +28,50 @@ export default function Navbar({ navigateToPage, isHomePage }) {
             <a href="#quienes-somos" className="px-2 py-2 hover:text-[#c19a28] transition-colors rounded-md hover:bg-emerald-50">QUIÉNES SOMOS</a>
             <a href="#" className="px-2 py-2 hover:text-[#c19a28] transition-colors rounded-md hover:bg-emerald-50">DIÓCESIS</a>
             <a href="#" className="px-2 py-2 hover:text-[#c19a28] transition-colors rounded-md hover:bg-emerald-50">NOTICIAS</a>
-            <a href="#" className="flex items-center px-2 py-2 hover:text-[#c19a28] transition-colors rounded-md hover:bg-emerald-50">
-              FORMACIÓN <ChevronDown className="w-3 h-3 ml-0.5" />
-            </a>
-            <a href="#" className="px-2 py-2 hover:text-[#c19a28] transition-colors rounded-md hover:bg-emerald-50">RAMILLETE DE ORACIÓN</a>
+           <div className="relative group">
+              {/* Botón principal de Formación */}
+              <button className="flex items-center px-2 py-2 hover:text-[#c19a28] transition-colors rounded-md hover:bg-emerald-50 cursor-pointer">
+                FORMACIÓN <ChevronDown className="w-3 h-3 ml-0.5" />
+              </button>
+              
+              {/* Submenú desplegable */}
+              <div className="absolute left-0 mt-1 w-44 bg-white text-slate-800 rounded-lg shadow-lg py-2 hidden group-hover:block border border-slate-100 z-50">
+                <a 
+                  href="#" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (typeof navigateToPage === 'function') navigateToPage('liturgia');
+                  }}
+                  className="block px-4 py-2 text-sm hover:bg-emerald-50 hover:text-[#c19a28] transition-colors"
+                >
+                  Liturgica
+                </a>
+                
+                <a 
+                  href="#" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (typeof navigateToPage === 'function') navigateToPage('pastoral');
+                  }}
+                  className="block px-4 py-2 text-sm hover:bg-emerald-50 hover:text-[#c19a28] transition-colors"
+                >
+                  Pastoral
+                </a>
+                
+                <a 
+                  href="#" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (typeof navigateToPage === 'function') navigateToPage('eclesial');
+                  }}
+                  className="block px-4 py-2 text-sm hover:bg-emerald-50 hover:text-[#c19a28] transition-colors"
+                >
+                  Eclesial
+                </a>
+              </div>
+            </div>
+           <a href="#jornada" onClick={(e) => {e.preventDefault();if (typeof navigateToPage === 'function') navigateToPage('jornada');}}
+             className="px-2 py-2 hover:text-[#c19a28] transition-colors rounded-md hover:bg-emerald-50">JORNADA DE ORACIÓN</a>
             <a href="#" className="px-2 py-2 hover:text-[#c19a28] transition-colors rounded-md hover:bg-emerald-50">RECURSOS</a>
             <a href="#" className="px-2 py-2 hover:text-[#c19a28] transition-colors rounded-md hover:bg-emerald-50">COMUNIDAD</a>
             <a href="#contacto" className="px-4 py-2 bg-emerald-800 text-white font-serif font-bold rounded-lg shadow-md hover:bg-emerald-700 hover:-translate-y-0.5 transition-all ml-2 border border-emerald-700">CONTACTO</a>
@@ -52,7 +92,7 @@ export default function Navbar({ navigateToPage, isHomePage }) {
           <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-emerald-800 font-semibold hover:bg-emerald-50 rounded-lg">DIÓCESIS</a>
           <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-emerald-800 font-semibold hover:bg-emerald-50 rounded-lg">NOTICIAS</a>
           <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-emerald-800 font-semibold hover:bg-emerald-50 rounded-lg">FORMACIÓN</a>
-          <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-emerald-800 font-semibold hover:bg-emerald-50 rounded-lg">RAMILLETE DE ORACIÓN</a>
+          <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-emerald-800 font-semibold hover:bg-emerald-50 rounded-lg">JORNADA DE ORACIÓN</a>
           <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-emerald-800 font-semibold hover:bg-emerald-50 rounded-lg">RECURSOS</a>
           <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-emerald-800 font-semibold hover:bg-emerald-50 rounded-lg">COMUNIDAD</a>
           <a href="#contacto" onClick={() => setIsMobileMenuOpen(false)} className="block px-4 py-3 bg-emerald-800 text-white font-serif font-bold text-center rounded-xl shadow-md mt-4">CONTACTO</a>

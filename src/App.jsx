@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer'; 
 import HomePage from './HomePage';
 import DimensionPage from './DimensionPage';
+import JornadaOracion from './components/JornadaOracion';
+import FormacionPage from './components/FormacionPage';
 
 export default function App() {
 
@@ -37,8 +39,40 @@ export default function App() {
         </div>
       )}
 
+      {currentPage === 'jornada' && (
+        <div className="min-h-screen bg-[#f7f9f7] text-slate-800 font-sans antialiased">
+          <Navbar navigateToPage={navigateToPage} isHomePage={false} />
+          <JornadaOracion />
+          <Footer />
+        </div>
+      )}
+
       {currentPage === 'dimension' && (
         <DimensionPage navigateToPage={navigateToPage} />
+      )}
+
+      {currentPage === 'liturgia' && (
+        <FormacionPage 
+          navigateToPage={navigateToPage} 
+          titulo="Liturgia" 
+          descripcion="Materiales y orientaciones litúrgicas para el ministerio del diácono permanente." 
+        />
+      )}
+
+      {currentPage === 'pastoral' && (
+        <FormacionPage 
+          navigateToPage={navigateToPage} 
+          titulo="Pastoral" 
+          descripcion="Guías de acción pastoral y cercanía con las comunidades." 
+        />
+      )}
+
+      {currentPage === 'eclesial' && (
+        <FormacionPage 
+          navigateToPage={navigateToPage} 
+          titulo="Eclesial" 
+          descripcion="Documentos sobre la comunión, eclesiología y servicio en la Iglesia." 
+        />
       )}
     </div>
   );

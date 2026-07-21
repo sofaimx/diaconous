@@ -17,9 +17,28 @@ export default function Hero({ navigateToPage }) {
           <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#f3d97f] to-[#c19a28]">Diaconado Permanente</span>
         </h1>
         <div className="h-1.5 w-24 bg-[#c19a28] mx-auto rounded-full mb-8 shadow-sm"></div>
-        <p className="text-lg sm:text-xl text-emerald-50 max-w-3xl mx-auto font-light leading-relaxed drop-shadow">
+        <p className="text-lg sm:text-xl text-emerald-50 max-w-3xl mx-auto font-light leading-relaxed drop-shadow mb-8">
           Acompañando, formando y promoviendo la restauración del ministerio diaconal en las comunidades eclesiales de México.
         </p>
+        
+    {/* Banner destacado de la VII Jornada de Oración */}
+        <div className="max-w-2xl mx-auto mb-10 p-6 bg-emerald-950/60 backdrop-blur-md rounded-2xl border border-[#c19a28]/40 shadow-xl text-center">
+          <span className="text-[#f3d97f] text-sm font-bold tracking-widest uppercase block mb-1">
+            Del 1 al 10 de agosto
+          </span>
+          <h3 className="text-2xl font-serif font-bold text-white mb-2">
+            VII Jornada Nacional de Oración por el Diaconado Permanente
+          </h3>
+          <p className="text-slate-200 text-sm sm:text-base font-light mb-5">
+            Unámonos como comunidad eclesial para acompañar con la oración y el fervor espiritual a todos nuestros diáconos permanentes en México.
+          </p>
+          <button 
+            onClick={() => navigateToPage('jornada')}
+            className="inline-flex items-center px-6 py-2.5 bg-[#c19a28] hover:bg-[#d4af37] text-emerald-950 font-bold text-sm rounded-lg transition-colors cursor-pointer shadow-md"
+          >
+            Ver documentos de la Jornada &rarr;
+          </button>
+        </div>
         
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <a 
@@ -30,7 +49,7 @@ export default function Hero({ navigateToPage }) {
             Conocer Identidad
           </a>
           
-          <a href="#funciones" className="px-7 py-3.5 bg-white/10 text-white font-semibold rounded-xl hover:bg-white/20 border border-white/30 backdrop-blur-md transition-all">Ver Funciones</a>
+          <a href="#funciones" className="px-7 py-3.5 bg-white/10 text-white font-semibold rounded-xl hover:bg-white/20 border border-white/30 backdrop-blur-md transition-all flex items-center justify-center">Ver Funciones</a>
           
           <a 
             onClick={() => navigateToPage('dimension')}
